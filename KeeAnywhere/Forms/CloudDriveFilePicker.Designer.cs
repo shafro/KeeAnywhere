@@ -186,11 +186,11 @@
             this.m_cbAccounts.FormattingEnabled = true;
             this.m_cbAccounts.ImageList = this.m_ilProviderIcons;
             this.m_cbAccounts.Indent = 20;
-            this.m_cbAccounts.ItemHeight = 16;
+            // this.m_cbAccounts.ItemHeight = 16;
             this.m_cbAccounts.Location = new System.Drawing.Point(91, 81);
             this.m_cbAccounts.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.m_cbAccounts.Name = "m_cbAccounts";
-            this.m_cbAccounts.Size = new System.Drawing.Size(347, 22);
+            this.m_cbAccounts.Size = new System.Drawing.Size(347, 0);
             this.m_cbAccounts.TabIndex = 19;
             this.m_cbAccounts.SelectedValueChanged += new System.EventHandler(this.OnAccountChanged);
             // 
@@ -224,6 +224,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.m_bannerImage)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
+
+            this.AutoScaleMode = AutoScaleMode.Dpi;
+            // нормальная высота для DPI
+            this.m_cbAccounts.Height = this.m_cbAccounts.PreferredHeight;
 
         }
 
